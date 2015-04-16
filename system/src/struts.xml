@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!-- 指定struts2的请求后缀，该属性默认值action ，即匹配*.action的请求交由struts2处理，如需指定多个请求后缀，用“，”分隔-->
+    <constant name="struts.action.extension" value="do"/>
+    <!-- 设置浏览器是否缓存静态内容，默认true（生产环境），开发阶段最好false -->
+    <constant name="struts.serve.static.browserCache" value="false"/>
+    <!-- 当struts配置文件修改，是否重载该文件，默认false（生产环境），开发阶段打开 -->
+    <constant name="struts.serve.configuration.xml.reload" value="true"/>
+    <!-- 开发模式使用，打印更详细错误信息 -->
+    <constant name="struts.devMode" value="true"/>
+    <!-- 默认试图主题 -->
+    <constant name="struts.ui.theme" value="simple"/>
+    <!-- action的类由spring负责创建 -->
+    <constant name="struts.objectFactory" value="spring"/>
+    <!-- 对包及action的配置 -->
+	<package name="login"  namespace="/"  extends="struts-default" >
+	  <action name="stuAction_*" class="stuLoginAction" method="{1}">
+	    <result name="success">/student.jsp</result>
+	    <result name="error">/loginfail.jsp</result>
+	  </action>
+	<action name="adminAction_*" class="adminLoginAction" method="{1}">
+	    <result name="success">/backstage.jsp</result>
+	    <result name="error">/loginfail.jsp</result>
+	</action>
+	
+	  <action name="stuOpAction_*" class="stuOpreationAction" method="{1}">
+	    <result>/student.jsp</result>
+	    <result name="logout">/index.jsp</result>
+	    
+	  </action>
+	<action name="adminOpAction_*" class="adminOpreationAction" method="{1}">
+	<result>/index.jsp</result>
+	<result name="backstage">/backstage.jsp</result>
+	<result name="up">/backstage.jsp</result>
+	</action>
+	</package>
+	<!-- 在当页异步提示的操作 -->
+	<package name="json" namespace="/json" extends="json-default">
+	  <action name="stuOpAction_*" class="stuOpreationAction" method="{1}">
+	  <result type="json"/>
+	  </action>
+	<action name="adminOpAction_*" class="adminOpreationAction" method="{1}">
+	  <result type="json"/> 
+	</action>
+	</package>
+
+</struts>
+

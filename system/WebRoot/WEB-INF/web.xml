@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<!-- 欢迎界面-->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 欢迎界面完结 -->
+  <!-- spring配置 -->
+  <context-param><!-- 用classpath来指定从类路径检索文件，过多用“，”分割 -->
+    	<param-name>contextConfigLocation</param-name>
+    	<param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
+  <!-- spring配置完结 -->
+   <!--
+ 这是Spring的编码过滤器，我们可以直接拿来用，相信这段配置应该很好理解，
+ 不过请大家注意forceEncoding这个参数，把它设置为true表示不管请求中的编码
+ 是什么格式，都将强制采用encoding中设置的编码方式。另外对于响应也将按照encoding
+ 指定的编码进行设置。另外不建议将编码设置成gb2312或是gbk格式，请采用基于Unicode
+ 的UTF-8编码。 
+ -->
+ <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+ 
+        <init-param>
+           <param-name>encoding</param-name>
+           <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+           <param-name>forceEncoding</param-name>
+           <param-value>true</param-value>
+        </init-param>
+ </filter>
+ <filter-mapping> 
+        <filter-name>encodingFilter</filter-name> 
+        <url-pattern>/*</url-pattern> 
+ </filter-mapping>
+<!-- 编码过滤器完结 -->
+<!-- struts的配置 start--> 
+<!--<servlet> 
+<servlet-name>action</servlet-name> 
+<servlet-class>
+org.apache.struts.action.ActionServlet 
+</servlet-class> 
+<init-param> 
+<param-name>config</param-name> 
+<param-value>/WEB-INF/struts.xml</param-value> 
+</init-param> 
+<init-param> 
+<param-name>debug</param-name> 
+<param-value>3</param-value> 
+</init-param> 
+<init-param> 
+<param-name>detail</param-name> 
+<param-value>3</param-value> 
+</init-param> 
+<load-on-startup>0</load-on-startup> 
+</servlet> 
+<servlet-mapping> 
+<servlet-name>action</servlet-name> 
+<url-pattern>*.do</url-pattern> 
+</servlet-mapping>
+-->
+<!-- 在web项目中启用 struts2 -->
+  <filter>
+      <filter-name>struts2</filter-name>
+      <filter-class>
+          org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter
+      </filter-class>
+  </filter>
+  <filter-mapping>
+      <filter-name>struts2</filter-name>
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>
+<!-- struts的配置 end-->
+ <!-- 这个过滤器是个好东西，有了它，我们在使用Hibernate延迟加载的时候，
+ 就不会再为因Session被关闭，导致延迟加载数据异常而头痛了 -->
+ <filter>
+        <filter-name>hibernateOpenSessionInViewFilter</filter-name>
+        <filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+ </filter>
+ <filter-mapping> 
+  <filter-name>hibernateOpenSessionInViewFilter</filter-name> 
+  <url-pattern>/*</url-pattern> 
+ </filter-mapping>
+<!-- 懒加载配置完结 -->
+  <!-- context-param是在容器启动后最先被执行的，并且被放入到容器上下文中。
+  在这里引入spring的配置文件，是供Spring的ContextLoaderListener监听器使用。
+  而这个监听器中会有一个ContextLoade类用来获取这个配置文件中的信息。从而进行
+  Spring容器的初始化工作。 -->
+ <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+ </listener>
+ <!-- spring监听完结 -->
+ <!-- 这是Spring提供的一个用来防止内存泄漏的监听器 -->
+ <listener>
+        <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+ </listener>
+
+
+</web-app>

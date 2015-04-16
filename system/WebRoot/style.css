@@ -1,0 +1,359 @@
+﻿BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+INPUT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+SELECT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TEXTAREA {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+figure {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BODY {
+	FONT-FAMILY: microsoft yahei; FONT-SIZE: 12px; color:#555
+}
+INPUT {
+	FONT-FAMILY: microsoft yahei; FONT-SIZE: 12px
+}
+SELECT {
+	FONT-FAMILY: microsoft yahei; FONT-SIZE: 12px
+}
+TEXTAREA {
+	FONT-FAMILY: microsoft yahei; FONT-SIZE: 12px
+}
+
+UL {
+	LIST-STYLE-TYPE: none
+}
+OL {
+	LIST-STYLE-TYPE: none
+}
+IMG {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+BUTTON {
+	LINE-HEIGHT: normal; OVERFLOW: visible
+}
+INPUT {
+	LINE-HEIGHT: normal; OVERFLOW: visible
+}
+INPUT {
+	OUTLINE-STYLE: none
+}
+TEXTAREA {
+	OUTLINE-STYLE: none
+}
+A {
+	COLOR: #666; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #777
+}
+/*
+header.jsp
+
+已转移*/
+
+/*
+按钮
+
+*/
+.sub{
+	font-size: 13px;
+	width:80px;
+	color: #666;
+	background-color:#fff;
+	border-right:#999  groove 4px;
+	border-left:#999  groove 4px;
+	border-top:#fff  groove 1px;
+	border-bottom:#fff  groove 1px;
+
+}
+.sub:hover {
+	border-right:#999  groove 9px;
+	border-left:#999  groove 9px;
+	color: #444;
+}
+.sub1{
+	font-size: 12px;
+	width:40px;
+	color: #444;
+	background-color:#fff;
+border:#f2f2f2 dotted 1px;
+}
+.sub1:hover {
+	background-color:#f2f2f2;
+
+	color: #666;
+}	
+
+/*
+按钮2 如学生登录后的info处的下面按钮
+*/
+
+ .button {
+        outline: 0;
+        padding: 5px 12px;
+        display: block;
+        color: #9fa8b0;
+        font-weight: bold;
+        text-shadow: 1px 1px #1f272b;
+        border: 1px solid #1c252b;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        background: #232B30; /* old browsers */
+        background: -moz-linear-gradient(top, #3D4850 3%, #313d45 4%, #232B30 100%); /* firefox */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#3D4850), color-stop(4%,#313d45), color-stop(100%,#232B30)); /* webkit */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D4850', endColorstr='#232B30',GradientType=0 ); /* ie */
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* CSS3 */
+        -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Firefox */
+        -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Safari, Chrome */
+    }
+    .button:hover {
+        color: #fff;
+        background: #4C5A64; /* old browsers */
+        background: -moz-linear-gradient(top, #4C5A64 3%, #404F5A 4%, #2E3940 100%); /* firefox */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#4C5A64), color-stop(4%,#404F5A), color-stop(100%,#2E3940)); /* webkit */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4C5A64', endColorstr='#2E3940',GradientType=0 ); /* ie */
+    }
+    .button:active {
+        background-position: 0 top;
+        position: relative;
+        top: 1px;
+        color: #fff;
+        padding: 6px 12px 4px;
+        background: #20282D; /* old browsers */
+        background: -moz-linear-gradient(top, #20282D 3%, #252E34 51%, #222A30 100%); /* firefox */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#20282D), color-stop(51%,#252E34), color-stop(100%,#222A30)); /* webkit */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20282D', endColorstr='#222A30',GradientType=0 ); /* ie */
+        -moz-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Firefox */
+        -webkit-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Safari, Chrome */
+        box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */
+    }
+	
+	
+
+/*
+特殊字体的颜色、大小
+
+*/
+.ccc{
+	color:#ccc;
+	}
+.hg_f10{ font-size:10px}
+.777{
+	color:#777;
+	}
+.mark{
+	font-size:17px;
+	font:"Times New Roman", Times, serif;
+	 color:#09F
+	}
+.min_mark{
+	font-size:14px;
+	font:"Times New Roman", Times, serif;
+	 color:#39C;
+	}
+
+
+/*  */
+
+.cd{border-left:#999 solid 1px;-khtml-border-radius: 5px;-webkit-border-radius: 4px;border-radius: 8px;padding:9px;
+    -webkit-box-shadow:0px 2px 8px #A9E1FA;-moz-box-shadow:3px 2px 12px #0CF; }
+	
+	
+	/*  */
+.div1{overflow:hidden;width:140px;}
+.div2{ width:590px; margin:0 auto}
+.div2 ul {background:#FFF; display:block; min-height:32px}
+
+.div2 ul a { display:block; text-decoration:none;  padding:1px; color:#444}
+
+.div2 ul span {color:#D09C55; font-size:14px; margin-left:90px;cursor:hand;}
+
+.div2 ul a span{ color:#09C; font-size:16px; margin-left:190px;cursor:hand;}
+
+.div2 ul a li{ display:none; }
+
+.div2 ul li{ padding-top:0px; color:#999; font-size:12px; padding-left:12px;  display:block;  cursor:hand;}
+
+.div2 ul li:hover{border:#CCC 1px dashed;}
+
+.div2 ul li span{  color:#0CF; font-size:12px; margin-left:4px;cursor:hand;}
+
+.div2 ul li a { position:relative;	text-align:center; color:#777; display:block; text-decoration:none;  background:#FFF;min-width:200px;min-width:40px;}
+
+.div2 ul li a:hover{border:#999 dashed 1px; font-size:14px	}
+
+.div2 ul li a span{display:none;}
+
+.div2 ul li a:hover span{ right:-150px; position:absolute; z-index:3; color: #666;
+	font-size:12px; font-weight:400; display:block;
+     width:400px; background:#FFF;
+    background-color:#fff;text-decoration: none;border:1px solid #999;
+   -khtml-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;padding:5px;
+   -webkit-box-shadow:2px 1px 5px #ccc;-moz-box-shadow:3px 2px 1px #666;padding:9px 9px;
+ }
+
+.div2 ul a:hover li{ padding-top:0px; color:#999; font-size:12px; padding-left:28px;  display:block;  cursor:hand;}
+
+.div2 ul a:hover li:hover{border:#CCC 1px dashed;}
+
+.div2 ul a:hover li span{  color:#0CF; font-size:12px; margin-left:4px;cursor:hand;}
+
+.div2 ul a:hover li a { position:relative;	text-align:center; color:#777; display:block; text-decoration:none;  background:#FFF;min-width:200px;min-width:240px;}
+
+.div2 ul a:hover li a:hover{border:#999 dashed 1px; font-size:14px	}
+
+.div2 ul a:hover li a span{display:none;}
+
+.div2 ul  a:hover li a:hover span{ right:-250px; z-index:3; color: #666;
+	font-size:12px; font-weight:400; display:block; position:absolute;
+	min-width:46px; max-width:360px; background:#FFF;
+    background-color:#fff;text-decoration: none;border:1px solid #999;
+   -khtml-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;padding:5px;
+   -webkit-box-shadow:2px 1px 5px #ccc;-moz-box-shadow:3px 2px 1px #666;padding:9px 9px;
+ }
+
+
+/*  */
+.hg_bo1{border-top:#CCC 1px dashed}
+
+.menu{overflow:hidden;width:240px;}
+.menu ul {background:#FFF; color:#666; display: block;max-width: 240px; margin-bottom:2px; margin-top:3px; min-height:32px}
+.menu ul a { display:block; text-decoration:none;  padding:1px; color:#444}
+.menu ul span {color:#D09C55; font-size:14px; margin-left:90px;cursor:hand;}
+.menu ul a:hover{}
+.menu ul a span{ color:#09C; font-size:16px; margin-left:90px;cursor:hand;}
+.menu ul a li{ display:none; }
+.menu ul a:hover li{ padding:4px; color:#999; font-size:12px; padding-left:12px;  display:block;  cursor:hand;}
+.menu ul a:hover li:hover{border:#CCC 1px dashed;}
+
+.menu ul a:hover li span{  color:#0CF; font-size:12px; margin-left:4px;cursor:hand;}
+/**/
+
+/*代码编辑*/
+
+.st_top{background:url(../imge/st.gif) left top no-repeat;  width:920px}/* student上面背景*/
+.st_bac{width:980px;float: center;
+	background:url(../imge/nav.png) left bottom no-repeat;
+     border:#999 solid 1px;
+	 background-color:#fff;-khtml-border-radius: 5px;-webkit-border-radius: 4px;border-radius: 8px;padding:9px;
+    -webkit-box-shadow:0px 2px 8px #A9E1FA;-moz-box-shadow:3px 2px 12px #0CF; padding-top:0px; padding-bottom:120px}/* student背景*/
+ 
+ 
+ .Tab{
+	max-width:612px;
+    margin:0 auto;
+}
+
+.Menubox {
+	margin-top:180px;
+	height:25px;
+	margin-left:20px;
+	line-height:24px;
+}
+.Menubox ul{
+margin:0px;
+padding:0px;background:#fff}
+
+.Menubox li{
+float:left;
+display:block;
+cursor:pointer;
+width:80px;
+color:#fff;	
+margin-left:0px;
+text-align:center;
+font-size:14px;padding:0px;
+font-weight:400;background:#C5BFB4;
+}
+.Menubox li.hover{
+	border:#999 solid 1px;
+	border-bottom:none;
+	color:#759FA4;font-size:14px;
+	background:#fff;
+}
+
+.Contentbox{ border:#999 dashed 1px;
+
+min-height:450px;
+margin-right:4px;
+background:#fff;
+
+-khtml-border-radius: 5px;-webkit-border-radius: 4px;border-radius: 8px;padding:9px;
+    -webkit-box-shadow:0px 2px 8px #A9E1FA;-moz-box-shadow:3px 2px 12px #0CF; 
+clear:both;
+border-top:none;
+text-align:center;
+padding-top:50px;/* 导航与内容间的间距*/
+}
+
+/* student 导航布局*/
+		
+	
+
+
+
+
+
+
+#overDiv{
+ background-color:#FF0;
+ width: 100%;
+ height: 100%;
+ left:0;
+ top:0;/*FF IE7*/
+ filter:alpha(opacity=40);/*IE*/
+ opacity:0.2;/*FF*/
+ z-index:1;
+ position:fixed!important;/*FF IE7*/
+ position:absolute;/*IE6*/
+ _top:       expression(eval(document.compatMode &&
+ document.compatMode=='CSS1Compat') ?
+ documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+ document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+}
+#pwDiv{
+ background: url(http://localhost:8080/system/imge/pw.png);
+ background-repeat:repeat-x;
+ z-index:200;
+ width: 600px;
+ height: 300px;
+ left:40%;/*FF IE7*/
+ top:37%;/*FF IE7*/
+ margin-left:-150px!important;/*FF IE7 该值为本身宽的一半 */
+ margin-top:-60px!important;/*FF IE7 该值为本身高的一半*/
+ margin-top:0px;
+ position:fixed!important;/*FF IE7*/
+ position:absolute;/*IE6*/
+ _top:expression(eval(document.compatMode &&
+ document.compatMode=='CSS1Compat') ?
+ documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+ document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+}
+#upDiv{
+ background:url(http://localhost:8080/system/imge/up.png) no-repeat center;
+ z-index:100;
+ width: 600px;
+ height: 439px;
+ left:40%;/*FF IE7*/
+ top:25%;/*FF IE7*/
+ margin-left:-150px!important;/*FF IE7 该值为本身宽的一半 */
+ margin-top:-20px!important;/*FF IE7 该值为本身高的一半*/
+ margin-top:0px;
+ position:fixed!important;/*FF IE7*/
+ position:absolute;/*IE6*/
+ _top:       expression(eval(document.compatMode &&
+ document.compatMode=='CSS1Compat') ?
+ documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+ document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+}
